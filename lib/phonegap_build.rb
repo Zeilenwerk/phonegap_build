@@ -54,7 +54,7 @@ module PhonegapBuild
     end
 
     def create(options)
-      @client.parse(@res.post options)
+      @client.parse(@res.post(options))
     end
 
     def method_missing(method, *arguments, &block)
